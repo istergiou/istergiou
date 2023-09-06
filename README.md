@@ -1,4 +1,14 @@
-### Hi there 👋
+👋 Hi, I’m @istergiou
+👯 I’m looking to collaborate on a project that requires programming in 
+- java,
+- kotlin,
+- ![golang](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white),
+- openscad,
+- kubernetes, 
+- 🔗 blockchain, ![hyperledger](https://img.shields.io/badge/hyperledger-2F3134?style=for-the-badge&logo=hyperledger&logoColor=white)
+- ![Azure](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white)
+I have more than 20 years software development experience.
+📫 You can also reach me at ilias.stergiou at gmail.com
 
 <!--
 **istergiou/istergiou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
