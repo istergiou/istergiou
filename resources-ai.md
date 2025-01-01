@@ -3,14 +3,16 @@
 Online services per use case
 
 ## chat
-- https://chatgpt.com
-- https://copilot.microsoft.com
+- [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
+- [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
+
 ## search the internet 
-- https://chatgpt.com
+- [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
+
 ## create doc
-- https://chatgpt.com
-- https://copilot.microsoft.com
-- https://www.canva.com
+- [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
+- [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
+- [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
 - https://www.dupdub.com
 ## create image 
 - https://leonardo.ai
