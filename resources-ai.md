@@ -13,38 +13,38 @@ Online services per use case:
 - [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 - [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
 - [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
-- https://www.dupdub.com
+- [dupdub](https://www.dupdub.com)
 ## create image 
-- https://leonardo.ai
-- https://ideogram.ai/t/explore
-- https://www.canva.com
-- https://playground.com/m/ai-image-generator
+- [leonardo](https://leonardo.ai)
+- [ideogram](https://ideogram.ai/t/explore)
+- [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
+- [playground](https://playground.com/m/ai-image-generator)
 ## create presentations
 - https://gamma.app
-- https://www.canva.com
+- [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
 ## create website / social / blog
-- https://www.canva.com
+- [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
 ## create avatar
-- https://www.midjourney.com/
-- https://www.dupdub.com
+- [midjourney](https://www.midjourney.com/)
+- [dupdub](https://www.dupdub.com)
 ## create logos
-- https://www.recraft.ai
+- [Recraft](https://www.recraft.ai)
 ## create mindmap
-- https://mapify.so
+- [Mapify](https://mapify.so)
 ## create videos
-- https://www.capcut.com
-- https://www.heygen.com
-- https://www.dupdub.com
+- [Capcut](https://www.capcut.com)
+- [Heygen](https://www.heygen.com)
+- [dupdub](https://www.dupdub.com)
 ## create voice
-- https://elevenlabs.io
-- https://www.dupdub.com
+- [Elevenlabs](https://elevenlabs.io)
+- [dupdub](https://www.dupdub.com)
 ## create music
-- https://suno.com
+- [suno](https://suno.com)
 ## transcribe audio
-- https://www.notta.ai
-- https://www.heygen.com
+- [notta.ai](https://www.notta.ai)
+- [heygen](https://www.heygen.com)
 ## create marketing content
-- https://mailchimp.com/solutions/ai-tools/
-- https://www.beehive.ai
+- [Mailchimp](https://mailchimp.com/solutions/ai-tools/)
+- [Beehive](https://www.beehive.ai)
 ## therapy
-- https://www.chatmind.ai/en/
+- [ChatMind](https://www.chatmind.ai/)
