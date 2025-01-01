@@ -1,6 +1,6 @@
 👋 Hi, I’m @istergiou
 
-👯 I’m looking to collaborate on a project that requires programming in 
+👯 I’m looking to collaborate on a project that requires programming in:
 - java,
 - ![kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white),
 - ![golang](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white),
@@ -11,6 +11,9 @@
 I have more than 20 years software development experience.
 
 📫 You can also reach me at ilias.stergiou at gmail.com
+
+You might find useful the following resources:
+- [AI resources](https://github.com/istergiou/istergiou/blob/main/resources-ai.md)
 
 <!--
 **istergiou/istergiou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

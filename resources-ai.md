@@ -1,13 +1,13 @@
 # AI resources
 
-Online services per use case
+Online services per use case:
 
 ## chat
-- [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
+- [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 - [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
 
 ## search the internet 
-- [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
+- [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 
 ## create doc
 - [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
