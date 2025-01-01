@@ -13,36 +13,36 @@ Online services per use case
 - https://www.canva.com
 - https://www.dupdub.com
 ## create image 
-https://leonardo.ai
-https://ideogram.ai/t/explore
-https://www.canva.com
-https://playground.com/m/ai-image-generator
+- https://leonardo.ai
+- https://ideogram.ai/t/explore
+- https://www.canva.com
+- https://playground.com/m/ai-image-generator
 ## create presentations
-https://gamma.app
-https://www.canva.com
+- https://gamma.app
+- https://www.canva.com
 ## create website / social / blog
-https://www.canva.com
+- https://www.canva.com
 ## create avatar
-https://www.midjourney.com/
-https://www.dupdub.com
+- https://www.midjourney.com/
+- https://www.dupdub.com
 ## create logos
-https://www.recraft.ai
+- https://www.recraft.ai
 ## create mindmap
-https://mapify.so
+- https://mapify.so
 ## create videos
-https://www.capcut.com
-https://www.heygen.com
-https://www.dupdub.com
+- https://www.capcut.com
+- https://www.heygen.com
+- https://www.dupdub.com
 ## create voice
-https://elevenlabs.io
-https://www.dupdub.com
+- https://elevenlabs.io
+- https://www.dupdub.com
 ## create music
-https://suno.com
+- https://suno.com
 ## transcribe audio
-https://www.notta.ai
-https://www.heygen.com
+- https://www.notta.ai
+- https://www.heygen.com
 ## create marketing content
-https://mailchimp.com/solutions/ai-tools/
-https://www.beehive.ai
+- https://mailchimp.com/solutions/ai-tools/
+- https://www.beehive.ai
 ## therapy
-https://www.chatmind.ai/en/
+- https://www.chatmind.ai/en/
