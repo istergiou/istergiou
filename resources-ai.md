@@ -46,20 +46,20 @@ Online services per use case:
 - [Beehive](https://www.beehive.ai)
 ## therapy
 - [ChatMind](https://www.chatmind.ai/)
-## code completion
+## complete code (code completion)
 - [GitHub Copilot](https://github.com/features/copilot)
 - Amazon CodeWhisperer [Amazon Q Developer](https://aws.amazon.com/q/developer/)
 - [Codeium](https://codeium.com)
 
-## code generation
+## generate code 
 - [Claude](https://claude.ai)
 - [ChatGPT](https://chatgpt.com)
 
-## design to code
+## generate code from design (design to code)
 - [Visual Copilot](https://www.builder.io/blog/figma-to-code-visual-copilot) (transformation of Figma designs into responsive code)
 
-## code quality and security
+## improve code quality and security
 - [Snyk](https://snyk.io) improve code quality and security
 
-## AI-enhanced IDEs
+## use of AI-enhanced IDEs
 - [Cursor](https://www.cursor.com)
