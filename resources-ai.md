@@ -5,16 +5,14 @@ Online services per use case:
 ## chat
 - [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 - [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
-
 ## search the internet 
 - [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
-
 ## create doc
 - [ChatGPT](https://chatgpt.com): AI-based chat service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 - [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
 - [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
 - [dupdub](https://www.dupdub.com)
-## create image 
+## create image
 - [leonardo](https://leonardo.ai)
 - [ideogram](https://ideogram.ai/t/explore)
 - [canva](https://www.canva.com): about in [wikipedia](https://en.wikipedia.org/wiki/Canva)
@@ -48,3 +46,20 @@ Online services per use case:
 - [Beehive](https://www.beehive.ai)
 ## therapy
 - [ChatMind](https://www.chatmind.ai/)
+## code completion
+- [GitHub Copilot](https://github.com/features/copilot)
+- Amazon CodeWhisperer [Amazon Q Developer](https://aws.amazon.com/q/developer/)
+- [Codeium](https://codeium.com)
+
+## code generation
+- [Claude](https://claude.ai)
+- [ChatGPT](https://chatgpt.com)
+
+## design to code
+- [Visual Copilot](https://www.builder.io/blog/figma-to-code-visual-copilot) (transformation of Figma designs into responsive code)
+
+## code quality and security
+- [Snyk](https://snyk.io) improve code quality and security
+
+## AI-enhanced IDEs
+- [Cursor](https://www.cursor.com)
