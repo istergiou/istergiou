@@ -5,6 +5,8 @@ Online services per use case:
 ## chat
 - [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 - [GitHub Copilot](https://copilot.microsoft.com): about in [wikipedia](https://en.wikipedia.org/wiki/Microsoft_Copilot)
+- [Claude](https://claude.ai): about in [wikipedia](https://en.wikipedia.org/wiki/Claude_(language_model))
+
 ## search the internet 
 - [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 ## create doc
@@ -46,17 +48,24 @@ Online services per use case:
 - [Beehive](https://www.beehive.ai)
 ## therapy
 - [ChatMind](https://www.chatmind.ai/)
-## complete code (code completion)
+## complete code (code completion), inline IDE assistants
 - [GitHub Copilot](https://github.com/features/copilot)
 - Amazon CodeWhisperer [Amazon Q Developer](https://aws.amazon.com/q/developer/)
 - [Codeium](https://codeium.com)
+- [JetBrains AI](https://www.jetbrains.com/ai/)
+- [Amazon CodeWhisperer](https://aws.amazon.com/q/developer/build/)
 
 ## generate code 
-- [Claude](https://claude.ai)
-- [ChatGPT](https://chatgpt.com)
+- [Claude](https://claude.ai): about in [wikipedia](https://en.wikipedia.org/wiki/Claude_(language_model))
+- [ChatGPT](https://chatgpt.com): AI-based chat and search service, about in [wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
 
 ## generate code from design (design to code)
 - [Visual Copilot](https://www.builder.io/blog/figma-to-code-visual-copilot) (transformation of Figma designs into responsive code)
+
+## Agentic AI IDE Environments
+- [Cursor](https://www.cursor.com): about in [wikipedia](https://en.wikipedia.org/wiki/Cursor_(code_editor))
+- [Windsurf](https://windsurf.com)
+- [Junie](https://www.jetbrains.com/junie/), intro course [by JetBrains](https://www.youtube.com/live/85tXw0uUN04)
 
 ## improve code quality and security
 - [Snyk](https://snyk.io) improve code quality and security
