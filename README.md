@@ -1,12 +1,13 @@
 👋 Hi, I’m @istergiou
 
 👯 I’m looking to collaborate on a project that requires programming in:
-- [java](https://www.java.com),
-- [kotlin](kotlinlang.org/),
-- [golang](https://go.dev),
-- OpenSCAD,
-- [kubernetes](https://kubernetes.io), [helm](https://helm.sh),
-- blockchain [hyperledger](https://www.hyperledger.org)
+- [Java](https://www.java.com)
+- [Kotlin](https://kotlinlang.org/)
+- [Go](https://go.dev)
+- [OpenSCAD](https://openscad.org)
+- [Kubernetes](https://kubernetes.io)
+- [Helm](https://helm.sh)
+- blockchain / [Hyperledger](https://www.hyperledger.org)
 - [Azure](https://azure.microsoft.com)
 
 I have more than 20 years software development experience.
