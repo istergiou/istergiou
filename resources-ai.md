@@ -2,7 +2,24 @@
 
 ## Services per use-case
 
-### chat
+### Conversational & Research
+
+| Service | [chat](#chat) | [search](#search-the-internet) | [research](#research) |
+|---------|:---:|:---:|:---:|
+| [ChatGPT](#chatgpt) | ✓ | ✓ | |
+| [Claude](#claude) | ✓ | | |
+| [Consensus](#consensus) | | | ✓ |
+| [DeepSeek](#deepseek) | ✓ | | |
+| [Elicit](#elicit) | | | ✓ |
+| [Gemini](#gemini) | ✓ | | |
+| [GitHub Copilot](#github-copilot) | ✓ | | |
+| [Grok](#grok) | ✓ | | |
+| [Mistral Le Chat](#mistral-le-chat) | ✓ | | |
+| [NotebookLM](#notebooklm) | | | ✓ |
+| [Perplexity](#perplexity) | ✓ | ✓ | ✓ |
+| [You.com](#youcom) | | ✓ | |
+
+#### chat
 - [ChatGPT](#chatgpt): AI-based chat and search service
 - [Claude](#claude)
 - [Gemini](#gemini): Google's AI assistant
@@ -12,31 +29,84 @@
 - [Mistral Le Chat](#mistral-le-chat): by Mistral AI
 - [Perplexity](#perplexity): AI chat with cited sources
 
-### search the internet
+#### search the internet
 - [ChatGPT](#chatgpt): AI-based chat and search service
 - [Perplexity](#perplexity): AI search engine with cited sources
 - [You.com](#youcom): AI-powered search engine
 
-### research
+#### research
 - [NotebookLM](#notebooklm): AI research and note-taking by Google
 - [Perplexity](#perplexity): AI search with cited sources
 - [Elicit](#elicit): AI research assistant for academic papers
 - [Consensus](#consensus): AI search engine for scientific research
 
-### create doc
+### Writing & Documents
+
+| Service | [doc](#create-doc) | [writing](#writing-assistant) | [marketing](#create-marketing-content) | [translate](#translation) |
+|---------|:---:|:---:|:---:|:---:|
+| [Beehive](#beehive) | | | ✓ | |
+| [Canva](#canva) | ✓ | | | |
+| [ChatGPT](#chatgpt) | ✓ | | | |
+| [Copy.ai](#copyai) | | ✓ | ✓ | |
+| [DeepL](#deepl) | | | | ✓ |
+| [DupDub](#dupdub) | ✓ | | | |
+| [GitHub Copilot](#github-copilot) | ✓ | | | |
+| [Google Translate](#google-translate) | | | | ✓ |
+| [Google Workspace AI](#google-workspace-ai) | ✓ | | | |
+| [Grammarly](#grammarly) | | ✓ | | |
+| [Jasper](#jasper) | | ✓ | ✓ | |
+| [Mailchimp](#mailchimp) | | | ✓ | |
+| [Rytr](#rytr) | | ✓ | | |
+
+#### create doc
 - [ChatGPT](#chatgpt): AI-based chat service
 - [GitHub Copilot](#github-copilot)
 - [Google Workspace AI](#google-workspace-ai): Gemini integrated into Docs, Slides, Sheets
 - [Canva](#canva)
 - [DupDub](#dupdub)
 
-### writing assistant
+#### writing assistant
 - [Jasper](#jasper): AI writing and marketing content
 - [Copy.ai](#copyai): AI copywriting tool
 - [Grammarly](#grammarly): AI grammar, style, and writing assistant
 - [Rytr](#rytr): AI writing assistant
 
-### create image
+#### create marketing content
+- [Jasper](#jasper): AI marketing content generation
+- [Copy.ai](#copyai): AI copywriting tool
+- [Mailchimp](#mailchimp)
+- [Beehive](#beehive)
+
+#### translation
+- [DeepL](#deepl): AI-powered translation
+- [Google Translate](#google-translate)
+
+### Visual & Creative
+
+| Service | [image](#create-image) | [slides](#create-presentations) | [website](#create-website--social--blog) | [avatar](#create-avatar) | [logos](#create-logos) | [mindmap](#create-mindmap) |
+|---------|:---:|:---:|:---:|:---:|:---:|:---:|
+| [Adobe Firefly](#adobe-firefly) | ✓ | | | | | |
+| [Beautiful.ai](#beautifulai) | | ✓ | | | | |
+| [Canva](#canva) | ✓ | ✓ | ✓ | | | |
+| [DALL-E](#dall-e) | ✓ | | | | | |
+| [Durable](#durable) | | | ✓ | | | |
+| [DupDub](#dupdub) | | | | ✓ | | |
+| [Flux](#flux) | ✓ | | | | | |
+| [Framer AI](#framer-ai) | | | ✓ | | | |
+| [Gamma](#gamma) | | ✓ | | | | |
+| [Ideogram](#ideogram) | ✓ | | | | | |
+| [Leonardo](#leonardo) | ✓ | | | | | |
+| [Looka](#looka) | | | | | ✓ | |
+| [Mapify](#mapify) | | | | | | ✓ |
+| [Midjourney](#midjourney) | ✓ | | | ✓ | | |
+| [Playground](#playground) | ✓ | | | | | |
+| [Recraft](#recraft) | | | | | ✓ | |
+| [Stable Diffusion](#stable-diffusion) | ✓ | | | | | |
+| [Tome](#tome) | | ✓ | | | | |
+| [Whimsical AI](#whimsical-ai) | | | | | | ✓ |
+| [Wix ADI](#wix-adi) | | | ✓ | | | |
+
+#### create image
 - [DALL-E](#dall-e): by OpenAI
 - [Midjourney](#midjourney)
 - [Adobe Firefly](#adobe-firefly): by Adobe
@@ -47,31 +117,51 @@
 - [Canva](#canva)
 - [Playground](#playground)
 
-### create presentations
+#### create presentations
 - [Gamma](#gamma)
 - [Beautiful.ai](#beautifulai): AI-powered presentation builder
 - [Tome](#tome): AI storytelling and presentations
 - [Canva](#canva)
 
-### create website / social / blog
+#### create website / social / blog
 - [Canva](#canva)
 - [Durable](#durable): AI website builder
 - [Framer AI](#framer-ai): AI-powered web design and publishing
 - [Wix ADI](#wix-adi): AI-based website creation by Wix
 
-### create avatar
+#### create avatar
 - [Midjourney](#midjourney)
 - [DupDub](#dupdub)
 
-### create logos
+#### create logos
 - [Recraft](#recraft)
 - [Looka](#looka): AI logo and brand design
 
-### create mindmap
+#### create mindmap
 - [Mapify](#mapify)
 - [Whimsical AI](#whimsical-ai): AI-powered diagrams and mind maps
 
-### create videos
+### Audio & Video
+
+| Service | [videos](#create-videos) | [voice](#create-voice) | [music](#create-music) | [audio](#transcribe-audio) |
+|---------|:---:|:---:|:---:|:---:|
+| [CapCut](#capcut) | ✓ | | | |
+| [DupDub](#dupdub) | ✓ | ✓ | | |
+| [ElevenLabs](#elevenlabs) | | ✓ | | |
+| [Heygen](#heygen) | ✓ | | | ✓ |
+| [Kling](#kling) | ✓ | | | |
+| [Murf.ai](#murfai) | | ✓ | | |
+| [Notta.ai](#nottaai) | | | | ✓ |
+| [Otter.ai](#otterai) | | | | ✓ |
+| [Pika](#pika) | ✓ | | | |
+| [Play.ht](#playht) | | ✓ | | |
+| [Runway](#runway) | ✓ | | | |
+| [Sora](#sora) | ✓ | | | |
+| [Suno](#suno) | | | ✓ | |
+| [Udio](#udio) | | | ✓ | |
+| [Whisper](#whisper) | | | | ✓ |
+
+#### create videos
 - [Sora](#sora): text-to-video by OpenAI
 - [Runway](#runway): AI video generation and editing
 - [Pika](#pika): AI video generation
@@ -80,56 +170,98 @@
 - [Heygen](#heygen)
 - [DupDub](#dupdub)
 
-### create voice
+#### create voice
 - [Elevenlabs](#elevenlabs)
 - [Murf.ai](#murfai): AI voice generator and text-to-speech
 - [Play.ht](#playht): AI text-to-speech and voice cloning
 - [DupDub](#dupdub)
 
-### create music
+#### create music
 - [Suno](#suno)
 - [Udio](#udio): AI music generation
 
-### transcribe audio
+#### transcribe audio
 - [Notta.ai](#nottaai)
 - [Otter.ai](#otterai): AI meeting transcription and notes
 - [Whisper](#whisper): open-source ASR by OpenAI
 - [Heygen](#heygen)
 
-### translation
-- [DeepL](#deepl): AI-powered translation
-- [Google Translate](#google-translate)
+### Productivity & Automation
 
-### create marketing content
-- [Jasper](#jasper): AI marketing content generation
-- [Copy.ai](#copyai): AI copywriting tool
-- [Mailchimp](#mailchimp)
-- [Beehive](#beehive)
+| Service | [PM](#project-management) | [knowledge](#knowledge-management--note-taking) | [automation](#ai-agents--workflow-automation) | [therapy](#therapy) | [data](#data-analysis) |
+|---------|:---:|:---:|:---:|:---:|:---:|
+| [Asana AI](#asana-ai) | ✓ | | | | |
+| [ChatGPT](#chatgpt) | | | | | ✓ |
+| [ChatMind](#chatmind) | | | | ✓ | |
+| [Julius AI](#julius-ai) | | | | | ✓ |
+| [Linear](#linear) | ✓ | | | | |
+| [Make](#make) | | | ✓ | | |
+| [n8n AI](#n8n-ai) | | | ✓ | | |
+| [NotebookLM](#notebooklm) | | ✓ | | | |
+| [Notion AI](#notion-ai) | ✓ | ✓ | | | |
+| [Relevance AI](#relevance-ai) | | | ✓ | | |
+| [Tableau AI](#tableau-ai) | | | | | ✓ |
+| [Zapier AI](#zapier-ai) | | | ✓ | | |
 
-### project management
+#### project management
 - [Notion AI](#notion-ai)
 - [Linear](#linear): AI-assisted issue tracking and project management
 - [Asana AI](#asana-ai): AI features in Asana
 
-### knowledge management / note taking
+#### knowledge management / note taking
 - [NotebookLM](#notebooklm): AI research assistant by Google
 - [Notion AI](#notion-ai)
 
-### AI agents / workflow automation
+#### AI agents / workflow automation
 - [n8n AI](#n8n-ai): open-source workflow automation with AI nodes
 - [Zapier AI](#zapier-ai): AI-powered workflow automation
 - [Make](#make): visual automation platform with AI
 - [Relevance AI](#relevance-ai): no-code AI agent builder
 
-### therapy
+#### therapy
 - [ChatMind](#chatmind)
 
-### data analysis
+#### data analysis
 - [Julius AI](#julius-ai): AI data analysis and visualization
 - [ChatGPT](#chatgpt): code interpreter for data analysis
 - [Tableau AI](#tableau-ai): AI-powered analytics by Tableau
 
-### complete code (code completion), inline IDE assistants
+### Software Development
+
+| Service | [code+](#complete-code-code-completion-inline-ide-assistants) | [codegen](#generate-code) | [frontend](#frontend-development) | [d2c](#generate-code-from-design-design-to-code) | [AI IDE](#agentic-ai-ide-environments) | [quality](#improve-code-quality-and-security) | [UI](#design-ui) | [testing](#application-testing) | [test code](#test-case-coding) | [chatbot](#chatbot-conversational-ai) |
+|---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [Amazon Q Developer](#amazon-q-developer) | ✓ | | | | | | | | | |
+| [Bolt](#bolt) | | ✓ | | | | | | | | |
+| [Botpress](#botpress) | | | | | | | | | | ✓ |
+| [Builder.io / Webflow AI](#builderio--webflow-ai) | | | ✓ | | | | | | | |
+| [ChatGPT](#chatgpt) | | ✓ | | | | | | | | |
+| [Claude](#claude) | | ✓ | | | | | | | | |
+| [Claude Code](#claude-code) | | | | | ✓ | | | | | |
+| [Codeium](#codeium) | ✓ | | | | | | | | | |
+| [CodeRabbit](#coderabbit) | | | | | | ✓ | | | | |
+| [Codium AI](#codium-ai) | | | | | | | | | ✓ | |
+| [Cursor](#cursor) | | | | | ✓ | | | | | |
+| [Framer AI](#framer-ai) | | | ✓ | | | | ✓ | | | |
+| [Galileo AI](#galileo-ai) | | | | | | | ✓ | | | |
+| [GitHub Copilot](#github-copilot) | ✓ | | | | | | | | | |
+| [GitHub Copilot Workspace](#github-copilot-workspace) | | | | | ✓ | | | | | |
+| [Intercom Fin](#intercom-fin) | | | | | | | | | | ✓ |
+| [JetBrains AI](#jetbrains-ai) | ✓ | | | | | | | | | |
+| [Junie](#junie) | | | | | ✓ | | | | | |
+| [Mabl](#mabl) | | | | | | | | ✓ | | |
+| [Replit Ghostwriter](#replit-ghostwriter) | | ✓ | | | | | | | | |
+| [Snyk](#snyk) | | | | | | ✓ | | | | |
+| [SonarQube](#sonarqube) | | | | | | ✓ | | | | |
+| [Supermaven](#supermaven) | ✓ | | | | | | | | | |
+| [Tabnine](#tabnine) | ✓ | | | | | | | | | |
+| [Testim.io](#testimio) | | | | | | | | ✓ | | |
+| [Uizard](#uizard) | | | | | | | ✓ | | | |
+| [v0](#v0) | | ✓ | ✓ | | | | | | | |
+| [Visual Copilot](#visual-copilot) | | | | ✓ | | | | | | |
+| [Voiceflow](#voiceflow) | | | | | | | | | | ✓ |
+| [Windsurf](#windsurf) | | | | | ✓ | | | | | |
+
+#### complete code (code completion), inline IDE assistants
 - [GitHub Copilot](#github-copilot)
 - [Amazon Q Developer](#amazon-q-developer)
 - [Codeium](#codeium)
@@ -137,46 +269,46 @@
 - [Tabnine](#tabnine): AI code completion
 - [Supermaven](#supermaven): fast AI code completion
 
-### generate code
+#### generate code
 - [Claude](#claude)
 - [ChatGPT](#chatgpt): AI-based chat and search service
 - [v0](#v0): UI generation from prompts by Vercel
 - [Bolt](#bolt): full-stack app generation by StackBlitz
 - [Replit Ghostwriter](#replit-ghostwriter): cloud IDE
 
-### frontend development
+#### frontend development
 - [Builder.io / Webflow AI](#builderio--webflow-ai)
 - [v0](#v0): UI generation from prompts by Vercel
 - [Framer AI](#framer-ai): AI-powered web design
 
-### generate code from design (design to code)
+#### generate code from design (design to code)
 - [Visual Copilot](#visual-copilot): transformation of Figma designs into responsive code
 
-### agentic AI IDE environments
+#### agentic AI IDE environments
 - [Claude Code](#claude-code): CLI coding agent by Anthropic
 - [Cursor](#cursor)
 - [Windsurf](#windsurf)
 - [Junie](#junie), intro course [by JetBrains](https://www.youtube.com/live/85tXw0uUN04)
 - [GitHub Copilot Workspace](#github-copilot-workspace): agent-based development environment
 
-### improve code quality and security
+#### improve code quality and security
 - [Snyk](#snyk)
 - [CodeRabbit](#coderabbit): AI code review
 - [SonarQube](#sonarqube): static analysis with AI insights
 
-### design UI
+#### design UI
 - [Uizard](#uizard)
 - [Galileo AI](#galileo-ai): AI UI design generation
 - [Framer AI](#framer-ai): AI-powered design and publishing
 
-### application testing
+#### application testing
 - [Testim.io](#testimio): manual testing, including testing of React apps
 - [Mabl](#mabl): AI-powered end-to-end test automation
 
-### test case coding
+#### test case coding
 - [Codium AI](#codium-ai)
 
-### chatbot, conversational AI
+#### chatbot, conversational AI
 - [Voiceflow](#voiceflow)
 - [Botpress](#botpress): open-source AI chatbot platform
 - [Intercom Fin](#intercom-fin): AI customer support agent
@@ -838,101 +970,3 @@ AI-powered workflow automation connecting thousands of apps with natural languag
 **URL:** [zapier.com/ai](https://zapier.com/ai)
 **Company:** [Zapier](https://zapier.com)
 **Use cases:** AI agents / workflow automation
-
-## Services × use cases
-
-Column abbreviations: **chat** · **search** · **research** · **doc** · **writing** · **image** · **slides** · **website** · **avatar** · **logos** · **mindmap** · **videos** · **voice** · **music** · **audio** · **translate** · **marketing** · **PM** · **knowledge** · **automation** · **therapy** · **data** · **code+** · **codegen** · **frontend** · **d2c** · **AI IDE** · **quality** · **UI** · **testing** · **test code** · **chatbot**
-
-| Service | [chat](#chat) | [search](#search-the-internet) | [research](#research) | [doc](#create-doc) | [writing](#writing-assistant) | [image](#create-image) | [slides](#create-presentations) | [website](#create-website--social--blog) | [avatar](#create-avatar) | [logos](#create-logos) | [mindmap](#create-mindmap) | [videos](#create-videos) | [voice](#create-voice) | [music](#create-music) | [audio](#transcribe-audio) | [translate](#translation) | [marketing](#create-marketing-content) | [PM](#project-management) | [knowledge](#knowledge-management--note-taking) | [automation](#ai-agents--workflow-automation) | [therapy](#therapy) | [data](#data-analysis) | [code+](#complete-code-code-completion-inline-ide-assistants) | [codegen](#generate-code) | [frontend](#frontend-development) | [d2c](#generate-code-from-design-design-to-code) | [AI IDE](#agentic-ai-ide-environments) | [quality](#improve-code-quality-and-security) | [UI](#design-ui) | [testing](#application-testing) | [test code](#test-case-coding) | [chatbot](#chatbot-conversational-ai) |
-|---------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Adobe Firefly](#adobe-firefly) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Amazon Q Developer](#amazon-q-developer) | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | |
-| [Asana AI](#asana-ai) | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | |
-| [Beautiful.ai](#beautifulai) | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Beehive](#beehive) | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | |
-| [Bolt](#bolt) | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | |
-| [Botpress](#botpress) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ |
-| [Builder.io / Webflow AI](#builderio--webflow-ai) | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | |
-| [Canva](#canva) | | | | ✓ | | ✓ | ✓ | ✓ | | | | | | | | | | | | | | | | | | | | | | | | |
-| [CapCut](#capcut) | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | |
-| [ChatGPT](#chatgpt) | ✓ | ✓ | | ✓ | | | | | | | | | | | | | | | | | | ✓ | | ✓ | | | | | | | | |
-| [ChatMind](#chatmind) | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | |
-| [Claude](#claude) | ✓ | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | |
-| [Claude Code](#claude-code) | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | |
-| [Codeium](#codeium) | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | |
-| [CodeRabbit](#coderabbit) | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | |
-| [Codium AI](#codium-ai) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | |
-| [Consensus](#consensus) | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Copy.ai](#copyai) | | | | | ✓ | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | |
-| [Cursor](#cursor) | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | |
-| [DALL-E](#dall-e) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [DeepL](#deepl) | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | |
-| [DeepSeek](#deepseek) | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Durable](#durable) | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | |
-| [DupDub](#dupdub) | | | | ✓ | | | | | ✓ | | | ✓ | ✓ | | | | | | | | | | | | | | | | | | | |
-| [Elicit](#elicit) | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [ElevenLabs](#elevenlabs) | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | |
-| [Flux](#flux) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Framer AI](#framer-ai) | | | | | | | | ✓ | | | | | | | | | | | | | | | | | ✓ | | | | ✓ | | | |
-| [Galileo AI](#galileo-ai) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | |
-| [Gamma](#gamma) | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Gemini](#gemini) | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [GitHub Copilot](#github-copilot) | ✓ | | | ✓ | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | |
-| [GitHub Copilot Workspace](#github-copilot-workspace) | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | |
-| [Google Translate](#google-translate) | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | |
-| [Google Workspace AI](#google-workspace-ai) | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Grammarly](#grammarly) | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Grok](#grok) | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Heygen](#heygen) | | | | | | | | | | | | ✓ | | | ✓ | | | | | | | | | | | | | | | | | |
-| [Ideogram](#ideogram) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Intercom Fin](#intercom-fin) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ |
-| [Jasper](#jasper) | | | | | ✓ | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | |
-| [JetBrains AI](#jetbrains-ai) | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | |
-| [Julius AI](#julius-ai) | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | |
-| [Junie](#junie) | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | |
-| [Kling](#kling) | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | |
-| [Leonardo](#leonardo) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Linear](#linear) | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | |
-| [Looka](#looka) | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | |
-| [Mabl](#mabl) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | |
-| [Mailchimp](#mailchimp) | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | |
-| [Make](#make) | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | |
-| [Mapify](#mapify) | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | |
-| [Midjourney](#midjourney) | | | | | | ✓ | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | |
-| [Mistral Le Chat](#mistral-le-chat) | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Murf.ai](#murfai) | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | |
-| [n8n AI](#n8n-ai) | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | |
-| [NotebookLM](#notebooklm) | | | ✓ | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | |
-| [Notion AI](#notion-ai) | | | | | | | | | | | | | | | | | | ✓ | ✓ | | | | | | | | | | | | | |
-| [Notta.ai](#nottaai) | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | |
-| [Otter.ai](#otterai) | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | |
-| [Perplexity](#perplexity) | ✓ | ✓ | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Pika](#pika) | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | |
-| [Play.ht](#playht) | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | |
-| [Playground](#playground) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Recraft](#recraft) | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | |
-| [Relevance AI](#relevance-ai) | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | |
-| [Replit Ghostwriter](#replit-ghostwriter) | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | |
-| [Runway](#runway) | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | |
-| [Rytr](#rytr) | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Snyk](#snyk) | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | |
-| [SonarQube](#sonarqube) | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | |
-| [Sora](#sora) | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | |
-| [Stable Diffusion](#stable-diffusion) | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Supermaven](#supermaven) | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | |
-| [Suno](#suno) | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | |
-| [Tableau AI](#tableau-ai) | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | |
-| [Tabnine](#tabnine) | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | |
-| [Testim.io](#testimio) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | |
-| [Tome](#tome) | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Udio](#udio) | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | |
-| [Uizard](#uizard) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | |
-| [v0](#v0) | | | | | | | | | | | | | | | | | | | | | | | | ✓ | ✓ | | | | | | | |
-| [Visual Copilot](#visual-copilot) | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | |
-| [Voiceflow](#voiceflow) | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ |
-| [Whisper](#whisper) | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | |
-| [Whimsical AI](#whimsical-ai) | | | | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | |
-| [Windsurf](#windsurf) | | | | | | | | | | | | | | | | | | | | | | | | | | | ✓ | | | | | |
-| [Wix ADI](#wix-adi) | | | | | | | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | |
-| [You.com](#youcom) | | ✓ | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Zapier AI](#zapier-ai) | | | | | | | | | | | | | | | | | | | | ✓ | | | | | | | | | | | | |
