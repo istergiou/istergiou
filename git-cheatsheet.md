@@ -2,10 +2,10 @@
 
 ## TOC
 
-- [references](#references)
-- [state diagram](#state-diagram)
-- [terminology](#terminology)
-- [operations](#operations)
+- [References](#references)
+- [State diagram](#state-diagram)
+- [Terminology](#terminology)
+- [Operations](#operations)
   - [introduction](#introduction)
   - [stage](#stage)
   - [un-stage](#un-stage)
@@ -33,14 +33,15 @@
   - [rebase](#rebase)
   - [interactive rebase](#interactive-rebase)
   - [recover deleted files](#recover-deleted-files)
-- [tag operations](#tag-operations)
+- [Tag operations](#tag-operations)
   - [create tag](#create-tag)
   - [remove tag](#remove-tag)
   - [checkout by tag](#checkout-by-tag)
   - [view tags](#view-tags)
-- [stash operations](#stash-operations)
+- [Stash operations](#stash-operations)
   - [stash](#stash)
   - [stash pop](#stash-pop)
+- [Branch operations](#branch-operations)
   - [switch to branch](#switch-to-branch)
   - [view current branches](#view-current-branches)
   - [delete branch](#delete-branch)
@@ -48,7 +49,7 @@
   - [merge branches - resolve conflicts](#merge-branches---resolve-conflicts)
     - [rebase (do not use)](#rebase-1)
     - [merge branch into master](#merge-branch-into-master)
-- [repository operations](#repository-operations)
+- [Repository operations](#repository-operations)
   - [multiple repositories](#multiple-repositories)
   - [clone](#clone)
   - [add remote](#add-remote)
@@ -56,16 +57,16 @@
   - [fetch](#fetch)
   - [pull](#pull)
   - [push](#push)
-- [git command setup](#git-command-setup)
+- [Git command setup](#git-command-setup)
   - [client setup](#client-setup)
-- [update .gitconfig with here string](#update-gitconfig-with-here-string)
-- [update shortcuts](#update-shortcuts)
-- [initialise](#initialise)
+  - [update .gitconfig](#update-gitconfig)
+  - [update shortcuts](#update-shortcuts)
+- [Initialise](#initialise)
   - [create a project/repo (local)](#create-a-projectrepo-local)
   - [get status of project/repo](#get-status-of-projectrepo)
   - [get history of project/repo](#get-history-of-projectrepo)
   - [get history with files updated](#get-history-with-files-updated)
-- [git worktree](#git-worktree)
+- [Git worktree](#git-worktree)
   - [add worktree](#add-worktree)
   - [add worktree for existing branch](#add-worktree-for-existing-branch)
   - [list worktrees](#list-worktrees)
@@ -76,14 +77,14 @@
   - [find the history of a specific file](#find-the-history-of-a-specific-file)
   - [squash](#squash)
   - [display last commit](#display-last-commit)
-- [troubleshoot](#troubleshoot)
-- [git internals](#git-internals)
+- [Troubleshoot](#troubleshoot)
+- [Git internals](#git-internals)
   - [folder structure](#folder-structure)
   - [Object types](#object-types)
     - [get sha of head](#get-sha-of-head)
     - [get pretty contents of object by sha](#get-pretty-contents-of-object-by-sha)
     - [show the tree object of a commit object](#show-the-tree-object-of-a-commit-object-includes-blob-objects-and-tree-objects)
-- [git branching workflows](#git-branching-workflows)
+- [Git branching workflows](#git-branching-workflows)
 
 ## References
 
@@ -96,8 +97,13 @@
 
 ## State diagram
 
-This is an elementary level diagram of a basic state transition. It is for presentation purposes only.
+This is an elementary level diagram depicting the various places a file (Object) is registered. 
+It is for presentation purposes only, it is not complete, it is not very accurate but it is sufficient
+for introduction to git.
 
+![Diagram](git-cheatsheet-state-transition.png "state diagram")
+
+Source: 
 ```plantuml
 @startuml
 left to right direction
@@ -178,41 +184,41 @@ LR --\> LR : [[#reset-soft git reset --soft]]
 
 Herein we avoid the terms:
 - working directory files, to refer to committed files, since in a directory there might be untracked files.
-- working directory, there is no notion of "directory" in git, there is only files/objects.
+- working directory, the "directory" in git is much different than traditional directories/folders.
 
 
 ## Operations
 
 ### Introduction
 
-Operations change files in the following areas (WA=Working Area, SA=Staging Area, LR=Local Repository):
+Operations change files in the following areas (WA: Working Area, SA: Staging Area, LR: Local Repository):
 
-| Command                        | WA | SA | LR | Notes                                                                                      |
-| ----------------------------   | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
-| `git add <file>`               | ❌ | ✅ | ❌ | Stage changes for next commit                                                              | 
-| `git commit`                   | ❌ | ❌ | ✅ | Saves staged index as new commit in repository                                             | 
-| `git branch`                   | ❌ | ❌ | ✅ | Creates a branch pointer only in `.git/refs/heads/`                                        | 
-| `git tag`                      | ❌ | ❌ | ✅ | Creates a tag pointer in `.git/refs/tags/`; does not change files                          | 
-| `git switch <branch>`          | ✅ | ✅ | ❌ | Moves HEAD to branch and updates working directory/index to match branch                   |
-| `git checkout <branch|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
-| `git checkout -b <branch>`     | ✅ | ✅ | ✅ | Creates a new branch pointer and switches to it; updates HEAD + working directory + index  |
-| `git revert <commit>`          | ✅ | ✅ | ✅ | Creates a new commit that undoes a previous commit; updates index + working directory      | 
-| `git mv <old> <new>`           | ✅ | ✅ | ❌ | Rename or move a file; staged for next commit                                              |
-| `git rm <file>`                | ✅ | ✅ | ❌ | Remove file from working directory + index; commit needed to remove from repo              |
-| `git reset --soft <commit>`    | ❌ | ❌ | ✅ | Move branch pointer only; index + working dir untouched                                    |
-| `git reset --mixed <commit>`   | ❌ | ✅ | ✅ | Move branch pointer + reset index; working dir unchanged                                   |
-| `git reset --hard <commit>`    | ✅ | ✅ | ✅ | Move branch pointer + reset index + working directory; discards changes                    |
-| `git stash`                    | ✅ | ✅ | ❌ | Save working directory + staged changes into stash; working dir cleaned                    |
-| `git stash apply`              | ✅ | ✅ | ❌ | Apply stashed changes to working directory and index; stash remains                        |
-| `git stash pop`                | ✅ | ✅ | ❌ | Apply stashed changes and remove them from stash                                           |
-| `git fetch`                    | ❌ | ❌ | ✅ | Update remote tracking branches in local repo; does not change working directory           |
-| `git pull`                     | ✅ | ✅ | ✅ | Fetch + merge (or rebase) from remote; may update files, index, and repo                   |
-| `git merge <branch>`           | ✅ | ✅ | ✅ | Merge another branch into current; creates commit if needed, may update files/index        |
-| `git rebase <branch>`          | ✅ | ✅ | ✅ | Reapply commits on top of another branch; rewrites history, updates working dir/index/repo |
+| Command                         | WA | SA | LR | Notes                                                                                      |
+| ----------------------------    | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
+| `git add <file>`                | ❌ | ✅ | ❌ | Stage changes for next commit                                                              | 
+| `git commit`                    | ❌ | ❌ | ✅ | Saves staged index as new commit in repository                                             | 
+| `git branch`                    | ❌ | ❌ | ✅ | Creates a branch pointer only in `.git/refs/heads/`                                        | 
+| `git tag`                       | ❌ | ❌ | ✅ | Creates a tag pointer in `.git/refs/tags/`; does not change files                          | 
+| `git switch <branch>`           | ✅ | ✅ | ❌ | Moves HEAD to branch and updates working directory/index to match branch                   |
+| `git checkout <branch\|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
+| `git checkout -b <branch>`      | ✅ | ✅ | ✅ | Creates a new branch pointer and switches to it; updates HEAD + working directory + index  |
+| `git revert <commit>`           | ✅ | ✅ | ✅ | Creates a new commit that undoes a previous commit; updates index + working directory      | 
+| `git mv <old> <new>`            | ✅ | ✅ | ❌ | Rename or move a file; staged for next commit                                              |
+| `git rm <file>`                 | ✅ | ✅ | ❌ | Remove file from working directory + index; commit needed to remove from repo              |
+| `git reset --soft <commit>`     | ❌ | ❌ | ✅ | Move branch pointer only; index + working dir untouched                                    |
+| `git reset --mixed <commit>`    | ❌ | ✅ | ✅ | Move branch pointer + reset index; working dir unchanged                                   |
+| `git reset --hard <commit>`     | ✅ | ✅ | ✅ | Move branch pointer + reset index + working directory; discards changes                    |
+| `git stash`                     | ✅ | ✅ | ❌ | Save working directory + staged changes into stash; working dir cleaned                    |
+| `git stash apply`               | ✅ | ✅ | ❌ | Apply stashed changes to working directory and index; stash remains                        |
+| `git stash pop`                 | ✅ | ✅ | ❌ | Apply stashed changes and remove them from stash                                           |
+| `git fetch`                     | ❌ | ❌ | ✅ | Update remote tracking branches in local repo; does not change working directory           |
+| `git pull`                      | ✅ | ✅ | ✅ | Fetch + merge (or rebase) from remote; may update files, index, and repo                   |
+| `git merge <branch>`            | ✅ | ✅ | ✅ | Merge another branch into current; creates commit if needed, may update files/index        |
+| `git rebase <branch>`           | ✅ | ✅ | ✅ | Reapply commits on top of another branch; rewrites history, updates working dir/index/repo |
 
 ### stage 
 
-stage: know about the change, but not permanent in the repository
+Stage: know about a change, but do not register as permanent in the repository.
 
 ```bash
 git add file.txt
@@ -230,6 +236,10 @@ Removes files from the staging area (index) back to the working area. The modifi
 ```bash
 git reset                  # unstage all staged files
 git reset HEAD hello.html  # unstage a specific file
+
+# modern alternative (git 2.23+)
+git restore --staged hello.html  # unstage a specific file
+git restore --staged .           # unstage all staged files
 ```
 
 | Command                        | WA | SA | LR | Notes                                                                                      |
@@ -263,7 +273,7 @@ git switch feature/x
 checkout a file: undo changes in working directory
 
 ```bash
-git checkout file.txt
+git checkout -- file.txt
 ```
 
 | Command                        | WA | SA | LR | Notes                                                                                      |
@@ -295,7 +305,7 @@ ref: [amending commits](https://githowto.com/amending_commits)
 
 ### branch
 
-Creates a new pointer. No files change, not staging changes occur. 
+Creates a new pointer. No files change, no staging changes occur.
 
 ```bash
 git branch feature/x
@@ -312,10 +322,10 @@ git branch branch_name
 git checkout branch_name
 ```
 
-| Command                        | WA | SA | LR | Notes                                                                                      |
-| ----------------------------   | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
-| `git branch`                   | ❌ | ❌ | ✅ | Creates a branch pointer only in `.git/refs/heads/`                                        | 
-| `git checkout <branch|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
+| Command                         | WA | SA | LR | Notes                                                                                      |
+| ----------------------------    | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
+| `git branch`                    | ❌ | ❌ | ✅ | Creates a branch pointer only in `.git/refs/heads/`                                        | 
+| `git checkout <branch\|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
 
 ### create branch (checkout branch and if does not exist create it)
 
@@ -498,10 +508,10 @@ git checkout feature
 git rebase main
 ```
 
-| Command                        | WA | SA | LR | Notes                                                                                      |
-| ----------------------------   | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
-| `git checkout <branch|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
-| `git rebase <branch>`          | ✅ | ✅ | ✅ | Reapply commits on top of another branch; rewrites history, updates working dir/index/repo |
+| Command                         | WA | SA | LR | Notes                                                                                      |
+| ----------------------------    | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
+| `git checkout <branch\|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
+| `git rebase <branch>`           | ✅ | ✅ | ✅ | Reapply commits on top of another branch; rewrites history, updates working dir/index/repo |
 
 ref:
 [rebase ref 1](https://githowto.com/rebasing)
@@ -565,7 +575,7 @@ git log --diff-filter=D --summary
 
 ref: [recover a deleted file](https://www.quora.com/How-can-I-recover-a-file-I-deleted-in-my-local-repo-from-the-remote-repo-in-Git)
 
-## tag operations
+## Tag operations
 
 ### create tag
 
@@ -604,7 +614,7 @@ git tag
 git hist master --all # view tags in logs
 ```
 
-## stash operations
+## Stash operations
 
 ### stash
 
@@ -636,6 +646,8 @@ git stash apply         # apply without removing from the stack
 | `git stash pop`                | ✅ | ✅ | ❌ | Apply stashed changes and remove them from stash                                           |
 
 
+## Branch operations
+
 ### switch to branch
 
 ref: [navigating branches](https://githowto.com/navigating_branches)
@@ -644,9 +656,9 @@ ref: [navigating branches](https://githowto.com/navigating_branches)
 git checkout branch_name
 ```
 
-| Command                        | WA | SA | LR | Notes                                                                                      |
-| ----------------------------   | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
-| `git checkout <branch|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
+| Command                         | WA | SA | LR | Notes                                                                                      |
+| ----------------------------    | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
+| `git checkout <branch\|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
 
 ### view current branches
 
@@ -676,10 +688,10 @@ git checkout style # go to branch style
 git merge master # merge with master
 ```
 
-| Command                        | WA | SA | LR | Notes                                                                                      |
-| ----------------------------   | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
-| `git checkout <branch|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
-| `git merge <branch>`           | ✅ | ✅ | ✅ | Merge another branch into current; creates commit if needed, may update files/index        |
+| Command                         | WA | SA | LR | Notes                                                                                      |
+| ----------------------------    | -- | -- | -- | ------------------------------------------------------------------------------------------ | 
+| `git checkout <branch\|commit>` | ✅ | ✅ | ❌ | Switch branch or checkout commit; updates HEAD + index + working directory                 |
+| `git merge <branch>`            | ✅ | ✅ | ✅ | Merge another branch into current; creates commit if needed, may update files/index        |
 
 ### merge branches - resolve conflicts
 
@@ -714,7 +726,7 @@ git push # push the changes to the remote branch
 
 #### rebase 
 
-> !IMPORTANT: do not use rebase
+> **Important:** do not use rebase
 
 ```bash
 git checkout style
@@ -740,7 +752,7 @@ git merge style
 ref: [merging back to master](https://githowto.com/merging_back_to_master)
 ref: [Pull and put all remote changes below local changes](https://www.youtube.com/watch?v=8KCQe9Pm1kg)
 
-## repository operations
+## Repository operations
 
 ### clone
 
@@ -758,6 +770,8 @@ git remote add shared ../hello.git
 ```
 
 ### multiple repositories
+
+A local repository can be linked to multiple remote repositories simultaneously. Each remote is given a name (default: `origin`) and can be fetched, pushed, and pulled independently. A common pattern is to use a bare repository (no working directory) as a shared hub accessible by multiple developers.
 
 ref: [multiple repositories](https://githowto.com/mutliple_repositories)
 
@@ -800,7 +814,7 @@ git push
 
 Updates the Remote Repository.
 
-## git command setup
+## Git command setup
 
 ### client setup
 
@@ -813,7 +827,9 @@ git config --global core.autocrlf input
 git config --global core.safecrlf true
 ```
 
-## update .gitconfig with here string
+### Update .gitconfig 
+
+Use herestring:
 
 ```bash
 cat > ~/.gitconfig <<EOF
@@ -829,7 +845,7 @@ cat > ~/.gitconfig <<EOF
 EOF
 ```
 
-## update shortcuts
+### Update shortcuts
 
 ```bash
 cat >>~/.bashrc <<EOF
@@ -862,7 +878,7 @@ GH_EOF
 EOF
 ```
 
-## initialise
+## Initialise
 
 ### create a project/repo (local)
 
@@ -896,7 +912,7 @@ git log --patch # will show the diff
 git log --graph --all --decorate --oneline # pretty print logs
 ```
 
-## git worktree
+## Git worktree
 
 A worktree lets you check out multiple branches simultaneously in separate directories, all sharing the same `.git` repository. This avoids stashing or committing unfinished work just to switch context.
 
@@ -1012,13 +1028,13 @@ git cat-file -t hash_value
 
 ref: [git push to remote branch with directory](https://stackoverflow.com/questions/50728699/git-push-to-a-remote-branch-with-directory)
 
-## troubleshoot
+## Troubleshoot
 
 ```bash
 cat .git/HEAD # reference to current branch
 ```
 
-## git internals
+## Git internals
 
 ref: [git internals video](https://www.youtube.com/watch?v=P6jD966jzlk&list=PLfc9ozQ6BCZjoOUJf5Tanr60fyHPl5gTI&index=75&t=686s)
 
@@ -1056,7 +1072,7 @@ Tags and branches are pointers to commits
 └── packed-refs       # When many refs exist, Git compresses them into one file
 ```
 
-### Object types:
+### Object types
 
 - commit: author, message, pointer to a tree of changes, pointer to parent commit
 - tree: pointer(s) to file names, content and other trees
@@ -1088,11 +1104,17 @@ git show --pretty=raw HEAD
 git ls-tree HEAD
 ```
 
-## git branching workflows
+## Git branching workflows
 
-[euipo project workflow](https://confluence.intrasoft-intl.com/pages/viewpage.action?spaceKey=EUIPO&title=IP+Tool+BoA+%3A%3A+Branching+model+and+releasing)
-[gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-[trunk-based workflow](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development)
+A branching workflow defines how a team uses branches to develop, release, and maintain code. The two most common models are GitFlow and trunk-based development.
+
+- [git-workflow-gitflow.md](git-workflow-gitflow.md) — GitFlow: structured multi-branch model for versioned releases
+- [git-workflow-trunk-based.md](git-workflow-trunk-based.md) — Trunk-based development: all developers integrate into a single trunk; preferred for continuous delivery
+
+External references:
+- [euipo project workflow](https://confluence.intrasoft-intl.com/pages/viewpage.action?spaceKey=EUIPO&title=IP+Tool+BoA+%3A%3A+Branching+model+and+releasing)
+- [gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- [trunk-based workflow](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development)
 
 
 
