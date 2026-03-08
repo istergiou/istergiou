@@ -16,6 +16,7 @@ I have more than 20 years software development experience.
 
 You might find useful the following resources:
 - [AI resources](https://github.com/istergiou/istergiou/blob/main/resources-ai.md)
+- [Git cheatsheet](https://github.com/istergiou/istergiou/blob/main/git-cheatsheet.md)
 
 <!--
 **istergiou/istergiou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
