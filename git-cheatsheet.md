@@ -14,6 +14,7 @@
   - [checkout a file](#checkout-a-file)
   - [commit](#commit)
   - [change previous commit](#change-previous-commit)
+  - [see untracked files](#see-untracked-files)
   - [branch](#branch)
     - [create branch (second method)](#create-branch-second-method)
     - [create branch (checkout branch and if does not exist create it)](#create-branch-checkout-branch-and-if-does-not-exist-create-it)
@@ -302,6 +303,12 @@ git commit --amend -m "Add an author/email comment"
 | `git commit --amend`           | ❌ | ❌ | ✅ | Replaces the most recent commit with a new one; rewrites history                           | 
 
 ref: [amending commits](https://githowto.com/amending_commits)
+
+### see untracked files
+
+```bash
+git ls-files --others --exclude-standard
+```
 
 ### branch
 
@@ -967,6 +974,19 @@ git worktree prune
 git fetch --all
 git reset --hard origin/master
 git pull
+```
+The above will not remove or update the untracked files.
+To see the files that will be overwritten by ```git reset --hard origin/master``` use:
+
+```bash
+git diff --name-status origin/master
+```
+and you can also use before ```git reset --hard origin/master``` to see what will change vs remote:
+
+```bash
+git fetch
+git status
+git diff HEAD origin/master
 ```
 
 ### find the history of a specific file
