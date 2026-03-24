@@ -42,15 +42,14 @@ I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure
 
 - [AI tools & services](resources-ai.md) — curated list of AI tools by use case
 - [Git cheatsheet](git-cheatsheet.md) — quick reference for everyday git operations
+- [Internet Radio Stream URLs](Internet-Radio-Stream-URLs.md) — list of URLs to hires music audio streams and [Global-Streaming](Global-Streaming.m3u8) m3u8 file that can be loaded by devices/apps
 
 ---
 
 ## Connect
 
 - Email: ilias.stergiou at gmail.com
-- LinkedIn: *(add your profile URL)*
-- Personal site / blog: *(if applicable)*
-
+- LinkedIn: [profile URL](https://www.linkedin.com/in/istergiou/)
 
 <!--
 **istergiou/istergiou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
