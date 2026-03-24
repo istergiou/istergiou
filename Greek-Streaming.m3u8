@@ -1,0 +1,52 @@
+#EXTM3U
+
+# --- NATIONAL/NEWS ---
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/skai-1003-gr.png" group-title="News",[Greek] Skai 100.3
+https://skai.live24.gr/skai1003
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/real-fm-gr.png" group-title="News",[Greek] Real FM 97.8
+http://realfm.live24.gr/realfm
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/ert-proto-programma-gr.png" group-title="News",[Greek] ERT Proto Programma
+https://radiostreaming.ert.gr/ert-proto
+
+# --- POP & MAINSTREAM ---
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/rythmos-949-gr.png" group-title="Pop",[Greek] Rythmos 94.9
+https://stream.radiojar.com/g4tyehk5yvduv
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/mad-radio-1062-gr.png" group-title="Pop",[Greek] Mad Radio 106.2
+http://mediaserver.mad.tv:8000/stream
+
+# --- ROCK & ALTERNATIVE ---
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/en-lefko-877-gr.png" group-title="Alternative",[Greek] En Lefko 87.7
+https://stream.radiojar.com/enlefko877
+
+#EXTINF:-1 tvg-logo="https://www.ertecho.gr/wp-content/uploads/2022/11/zeppelin.png" group-title="Rock",[Greek] ERT Zeppelin 106.7
+https://radiostreaming.ert.gr/ert-zeppelin
+
+# --- JAZZ, LOUNGE & CLASSICAL ---
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/pepper-966-gr.png" group-title="Jazz/Lounge",[Greek] Pepper 96.6
+https://stream.radiojar.com/pepper.m3u
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/ert-kosmos-gr.png" group-title="World",[Greek] ERT Kosmos 93.6
+https://radiostreaming.ert.gr/ert-kosmos
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/ert-trito-programma-gr.png" group-title="Classical",[Greek] ERT Trito (Classical)
+https://radiostreaming.ert.gr/ert-trito
+
+# --- DANCE & ELECTRONIC ---
+
+#EXTINF:-1 tvg-logo="https://best926.gr/wp-content/themes/best926/images/best-logo.png" group-title="Dance",[Greek] Best 92.6 (Deep House/Electronic)
+http://best.live24.gr/best1222
+
+# --- SPORTS ---
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/bwin-sport-fm-946-gr.png" group-title="Sports",[Greek] Sport FM 94.6
+http://sportfm.live24.gr/sportfm7712
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/greece/erasport-gr.png" group-title="Sports",[Greek] ERA Sport
+https://radiostreaming.ert.gr/ert-erasport
