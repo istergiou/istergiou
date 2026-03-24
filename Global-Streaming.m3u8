@@ -14,67 +14,67 @@ http://stream.radioparadise.com/rock-flac
 #EXTINF:-1 tvg-logo="https://radioparadise.com/rpassets/images/logo/rp_logo_v4.png", [Global] Radio Paradise (Global Mix - Lossless FLAC)
 http://stream.radioparadise.com/eclectic-flac
 
-#EXTINF:-1 tvg-logo="https://www.linn.co.uk/assets/images/linn-logo.png", [Global] Linn Radio (320kbps)
+#EXTINF:-1 tvg-logo="https://www.linn.co.uk/assets/dist/img/logo-black-horizontal.png", [Global] Linn Radio (320kbps)
 http://radio.linn.co.uk:8003/autodj
 
-#EXTINF:-1 tvg-logo="https://www.linn.co.uk/assets/images/linn-logo.png", [Global] Linn Jazz (320kbps)
+#EXTINF:-1 tvg-logo="https://www.linn.co.uk/assets/dist/img/logo-black-horizontal.png", [Global] Linn Jazz (320kbps)
 http://radio.linn.co.uk:8000/autodj
 
-#EXTINF:-1 tvg-logo="https://www.naimaudio.com/sites/default/files/naim_logo_black.png", [Global] Naim Radio (Lossless FLAC)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Naim_Audio_Logo.jpg", [Global] Naim Radio (Lossless FLAC)
 https://mscp3.live-streams.nl:8362/flac.flac
 
-#EXTINF:-1 tvg-logo="https://www.naimaudio.com/sites/default/files/naim_logo_black.png", [Global] Naim Jazz (Lossless FLAC)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Naim_Audio_Logo.jpg", [Global] Naim Jazz (Lossless FLAC)
 https://mscp3.live-streams.nl:8342/jazz-flac.flac
 
 # --- FIP RADIO FRANCE (AAC HiFi ~192kbps) ---
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/FIP_logo_2005.svg", [Global] FIP France (Eclectic - AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/FIP_logo_2021.svg", [Global] FIP France (Eclectic - AAC HiFi)
 https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/FIP_logo_2005.svg", [Global] FIP Jazz (AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/FIP_logo_2021.svg", [Global] FIP Jazz (AAC HiFi)
 https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/FIP_logo_2005.svg", [Global] FIP Rock (AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/FIP_logo_2021.svg", [Global] FIP Rock (AAC HiFi)
 https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/FIP_logo_2005.svg", [Global] FIP Groove (AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/FIP_logo_2021.svg", [Global] FIP Groove (AAC HiFi)
 https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/FIP_logo_2005.svg", [Global] FIP Electro (AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/FIP_logo_2021.svg", [Global] FIP Electro (AAC HiFi)
 https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/41/FIP_logo_2005.svg", [Global] FIP Monde (World Music - AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/FIP_logo_2021.svg", [Global] FIP Monde (World Music - AAC HiFi)
 https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance
 
 # --- PUBLIC BROADCASTERS ---
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/BBC_Radio_6_Music.svg/1200px-BBC_Radio_6_Music.svg.png", [Global] BBC Radio 6 Music (320kbps)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e7/BBC_Radio_6_Music_2022.svg", [Global] BBC Radio 6 Music (320kbps)
 https://lsn.lv/bbcradio.m3u8?station=bbc_6music&bitrate=320000
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/BBC_Radio_3_2022.svg/1200px-BBC_Radio_3_2022.svg.png", [Global] France Musique (Classical/Jazz - AAC HiFi)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/France_Musique_logo_2021.svg", [Global] France Musique (Classical/Jazz - AAC HiFi)
 https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/Deutschlandradio_Kultur_logo.svg", [Global] BR-Klassik (Classical - MP3 High)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/38/BR_Klassik_Logo_2024.svg", [Global] BR-Klassik (Classical - MP3 High)
 https://dispatcher.rndfnk.com/br/brklassik/live/mp3/high
 
-#EXTINF:-1 tvg-logo="https://www.kexp.org/static/images/kexp-logo-black.png", [Global] KEXP Seattle (Indie/Alternative)
+#EXTINF:-1 tvg-logo="https://www.kexp.org/static/assets/img/logo-header.svg", [Global] KEXP Seattle (Indie/Alternative)
 https://kexp-mp3-128.streamguys1.com/kexp128.mp3
 
-#EXTINF:-1 tvg-logo="https://www.wfmu.org/img/wfmu-logo-v1.png", [Global] WFMU (Freeform/Experimental)
+#EXTINF:-1 tvg-logo="https://wfmu.org/images/wfmu-logo.svg", [Global] WFMU (Freeform/Experimental)
 http://stream0.wfmu.org/freeform-high.aac
 
 # --- JAZZ ---
 
-#EXTINF:-1 tvg-logo="https://www.wbgo.org/sites/default/files/wbgo_logo.png", [Global] WBGO Jazz 88.3 FM (Newark NJ)
+#EXTINF:-1 tvg-logo="https://npr.brightspotcdn.com/dims4/default/9597d88/2147483647/strip/true/crop/200x100+0+0/resize/200x100!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa7%2F2f%2Fbfa4b00449099118e45fefe81fe8%2Fwbgo-logo-200x100.png", [Global] WBGO Jazz 88.3 FM (Newark NJ)
 https://ais-sa8.cdnstream1.com/3629_128.mp3
 
-#EXTINF:-1 tvg-logo="https://www.radioswissjazz.ch/live/images/rsj_logo.png", [Global] Radio Swiss Jazz (AAC+ 96k)
+#EXTINF:-1 tvg-logo="https://www.radioswissjazz.ch/_nuxt/img/rsj-logo-claim-desktop.beb322c.png", [Global] Radio Swiss Jazz (AAC+ 96k)
 https://stream.srg-ssr.ch/srgssr/rsj/aac/96
 
-#EXTINF:-1 tvg-logo="https://www.wqxr.org/img/wqxr-logo.png", [Global] WQXR 105.9 FM (Classical - NYC)
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/11/WQXR-FM_logo.svg", [Global] WQXR 105.9 FM (Classical - NYC)
 https://stream.wqxr.org/wqxr
 
-#EXTINF:-1 tvg-logo="https://www.radioswissclassic.ch/live/images/rsc_logo.png", [Global] Radio Swiss Classic (AAC+ 96k)
+#EXTINF:-1 tvg-logo="https://www.radioswissclassic.ch/_nuxt/img/rsc-logo-claim-desktop.520c5d8.png", [Global] Radio Swiss Classic (AAC+ 96k)
 https://stream.srg-ssr.ch/srgssr/rsc_de/aac/96
 
 # --- AMBIENT & CHILL ---
