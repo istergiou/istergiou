@@ -21,8 +21,8 @@ I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure
 
 ## GitHub Stats
 
-![Ilias's GitHub stats](https://github-readme-stats.vercel.app/api?username=istergiou&show_icons=true&theme=default&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=istergiou&layout=compact&hide_border=true)
+![Ilias's GitHub stats](https://github-readme-stats.vercel.app/api?username=istergiou&show_icons=true&theme=default&hide_border=true&cache_seconds=86400)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=istergiou&layout=compact&hide_border=true&cache_seconds=86400)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=istergiou&theme=default&hide_border=true)
 
@@ -46,7 +46,7 @@ I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure
 
 ## Notable Repos
 
-- [bashrc-installer](https://github.com/istergiou/bashrc-installer) — automated bash environment setup and configuration installer, 
+- [bashrc-installer](https://github.com/istergiou/bashrc-installer) — automated bashrc script installer, 
 - [bashrc-base](https://github.com/istergiou/bashrc-base) — bashrc for environment setting, favourite scripts and claude-code-artifact management, 
 - [bashrc-kubeconfig](https://github.com/istergiou/bashrc-kubeconfig) — bashrc for kubeconfig management, 
 
