@@ -44,6 +44,12 @@ I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure
 - [Git cheatsheet](git-cheatsheet.md) — quick reference for everyday git operations
 - [Internet Radio Stream URLs](Internet-Radio-Stream-URLs.md) — list of URLs to hires music audio streams and [Global-Streaming](Global-Streaming.m3u8) m3u8 file that can be loaded by devices/apps
 
+## Notable Repos
+
+- [bashrc-installer](https://github.com/istergiou/bashrc-installer) — automated bash environment setup and configuration installer, 
+- [bashrc-base](https://github.com/istergiou/bashrc-base) — bashrc for environment setting, favourite scripts and claude-code-artifact management, 
+- [bashrc-kubeconfig](https://github.com/istergiou/bashrc-kubeconfig) — bashrc for kubeconfig management, 
+
 ---
 
 ## Connect
