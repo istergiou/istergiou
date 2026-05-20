@@ -16,16 +16,7 @@ I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Hyperledger](https://img.shields.io/badge/Hyperledger-2F3134?style=flat&logo=hyperledger&logoColor=white)
 ![OpenSCAD](https://img.shields.io/badge/OpenSCAD-4B9CD3?style=flat)
-
----
-
-## GitHub Stats
-
-![Ilias's GitHub stats](https://github-readme-stats.vercel.app/api?username=istergiou&show_icons=true&theme=default&hide_border=true&cache_seconds=86400)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=istergiou&layout=compact&hide_border=true&cache_seconds=86400)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=istergiou&theme=default&hide_border=true)
-
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
 ---
 
