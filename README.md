@@ -1,6 +1,6 @@
 ## Hi, I’m Ilias 👋
 
-Software engineer with 20+ years of experience building distributed systems,
+Software engineer with 25+ years of experience building distributed systems,
 cloud-native applications, and blockchain solutions.
 I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure, and Hyperledger.
 
@@ -33,6 +33,7 @@ I work primarily in Java, Kotlin, and Go — and spend time on Kubernetes, Azure
 
 - [AI tools & services](resources-ai.md) — curated list of AI tools by use case
 - [Git cheatsheet](git-cheatsheet.md) — quick reference for everyday git operations
+- Git workflows — [trunk-based](git-workflow-trunk-based.md), [branch-based](git-workflow-branch-based.md), [branch-based with release branches](git-workflow-branch-with-branches-based.md), [GitFlow](git-workflow-gitflow.md), [feature branch](git-workflow-feature-branch-based.md), [forking](git-workflow-forking.md), [other workflows and practices](git-workflow-other.md)
 - [Istio / ServiceMesh cheatsheet](istio-cheatsheet.md) — quick reference to components, resources and key use cases
 - [Internet Radio Stream URLs](Internet-Radio-Stream-URLs.md) — list of URLs to hires music audio streams and [Global-Streaming](Global-Streaming.m3u8) m3u8 file that can be loaded by devices/apps
 
